@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+
+#app {
+    display: flex;
+    flex-wrap: wrap;
+    color: chocolate ;
+}
+
+#chart-section {
+    flex: 5;
+    padding: 20px;
+    order: 1;
+}
+
+#chart-container {
+    height: 400px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 25px;
+}
+
+#buttons button {
+    margin-right: 10px;
+    padding: 6px 15px;
+    border-radius: 10px;
+    color: chocolate;
+    background-color: rgba(222, 154, 105, 0.279);
+    border: transparent;
+    cursor: pointer;
+}
+
+#buttons button.active {
+    background-color: chocolate;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#list-section {
+    flex: 2;
+    padding: 20px;
+    order: 2;
+}
+
+#details-section {
+    padding: 20px;
+    order: 3;
+    width: 100%; /* Make details section take full width */
+    box-sizing: border-box; /* Include padding in the width */
+    display: block;
+}
+
+.list-item {
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 5px 40px;
+}
+
+.list-item span {
+    flex: 1;
+}
+
+.symbol-list{
+    /* background-color: rgba(222, 154, 105, 0.279); */
+}
+
+.symbol-list:hover{
+    color: rgb(255, 108, 3);
+    /* background-color: chocolate; */
+}

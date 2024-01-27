@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <title>Stock Portfolio App</title>
+</head>
+<body>
+    <div id="app">
+        <!-- Chart section -->
+        <div id="chart-section">
+            <div id="chart-container"></div>
+            <div id="buttons">
+                <button onclick="changeChartRange('1month')" id="1month">1 Month</button>
+                <button onclick="changeChartRange('3months')" id="3months">3 Months</button>
+                <button onclick="changeChartRange('1year')" id="1year">1 Year</button>
+                <button onclick="changeChartRange('5years')" id="5years">5 Years</button>
+            </div>            
+        </div>
+
+        <!-- List section -->
+        <div id="list-section"></div>
+        <!-- <ul id="stock-list"></ul> -->
+
+        
+
+        <!-- Detail section -->
+        <div id="details-section"></div>
+    </div>
+    <script src="script3.js"></script>
+</body>
+</html>
